@@ -11,10 +11,8 @@ function App() {
   return (
     <Provider store={store}>
       <div>
-        
         <Topbar />
-        
-        
+
         <Visualizer />
       </div>
     </Provider>
