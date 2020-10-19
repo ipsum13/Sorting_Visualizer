@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Provider } from "react-redux";
+import { Container } from "react-bootstrap";
+import store from "./store";
+import "./styles.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Visualizer from "./components/visualizer/Visualizer";
+import Topbar from "./components/Topbar/Topbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div>
+        
+        <Topbar />
+        
+        
+        <Visualizer />
+      </div>
+    </Provider>
   );
 }
 

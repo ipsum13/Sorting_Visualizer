@@ -1,0 +1,14 @@
+.array-container {
+  width: 100%;
+  height: 100%;
+  background-color: '#fff';
+  text-align: center;
+  }
+  
+  .array-bar {
+    padding-top: 7px;
+  font-family: sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  }
+
