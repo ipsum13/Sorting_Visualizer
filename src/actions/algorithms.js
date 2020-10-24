@@ -151,10 +151,7 @@ export const insertionSort = (array) => (dispatch) => {
                     arrayBars[barIndex].innerText = arrayBars[barIndex].clientHeight;
                 },i * ANIMATION_SPEED_MS);  
             }
-        }
-        // this.setState({array: sortArray})
-        //const RESTORE_TIME = parseInt(ANIMATION_SPEED_MS*animations.length/2 + 3000);
-        //setTimeout(() => this.restoreStoreButtons(), RESTORE_TIME); 
+        } 
   dispatch({
     type: INSERTION_SORT,
     payload: {name: 'Insertion Sort'}

@@ -1,6 +1,5 @@
 import { SET_SIZE, GENERATE_NEW_ARRAY } from "./types";
 
-//let WINDOW_WIDTH = window.innerWidth;
 let WINDOW_HEIGHT = window.innerHeight;
 
 export const setSize = (size) => (dispatch) => {
